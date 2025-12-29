@@ -1,0 +1,93 @@
+ body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  font-family: 'Segoe UI', sans-serif;
+  color: #00f7ff;
+  padding: 40px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: #121212;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00f7ff88;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00f7ff;
+  text-shadow: 0 0 5px #00f7ff;
+}
+
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #1f1f1f;
+  color: #00f7ff;
+  font-size: 16px;
+  box-shadow: inset 0 0 5px #00f7ff55;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #00f7ff;
+  color: black;
+  box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #1e1e1e;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #00f7ff44;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.done {
+  text-decoration: line-through;
+  color: #777;
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+.remove-btn {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  color: #ff0055;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.remove-btn:hover {
+  transform: scale(1.2);
+  color: #ff4477;
+}
